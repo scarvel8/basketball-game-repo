@@ -1,0 +1,8 @@
+{
+  "_resourceType": "project",
+  "name": "Basketball Game",
+  "author": "scarvel",
+  "notes": "Clean basketball minigame with debug features",
+  "_version": "4.2.0",
+  "_release": "9"
+}

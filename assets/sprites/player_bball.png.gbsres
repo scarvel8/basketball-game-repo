@@ -1,0 +1,160 @@
+{
+  "_resourceType": "sprite",
+  "id": "a6f0b2b3-e2f3-40c1-8188-f0510d02ec7b",
+  "name": "player_bball",
+  "symbol": "sprite_player_bball",
+  "states": [
+    {
+      "id": "8db75227-a1bf-48a6-ae0d-40623ebbf2b0",
+      "name": "",
+      "animationType": "fixed",
+      "flipLeft": false,
+      "animations": [
+        {
+          "id": "6f523a2f-edb4-4848-91d8-345aa47bf5e3",
+          "frames": [
+            {
+              "id": "79a2ec65-fc89-4617-b31c-3ea14a690651",
+              "tiles": [
+                {
+                  "id": "9aef1b08-b3d6-40d2-8e19-830dab40aba2",
+                  "x": 0,
+                  "y": 0,
+                  "sliceX": 0,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 0,
+                  "objPalette": "OBP0",
+                  "priority": false
+                },
+                {
+                  "id": "ede14c6d-24da-4681-9286-5892309e9511",
+                  "x": 8,
+                  "y": 0,
+                  "sliceX": 8,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 0,
+                  "objPalette": "OBP0",
+                  "priority": false
+                }
+              ]
+            },
+            {
+              "id": "041fa5fd-d24b-4327-9240-334c63a68095",
+              "tiles": [
+                {
+                  "id": "bd6bdf46-3b73-49b3-88c0-228146dafa9d",
+                  "x": 0,
+                  "y": 0,
+                  "sliceX": 16,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 0,
+                  "objPalette": "OBP0",
+                  "priority": false
+                },
+                {
+                  "id": "04d6dc12-8e88-40b9-8c42-b9c36b356187",
+                  "x": 8,
+                  "y": 0,
+                  "sliceX": 24,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 0,
+                  "objPalette": "OBP0",
+                  "priority": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "8c6351b2-f220-4a06-b569-1d800311b538",
+          "frames": [
+            {
+              "id": "506e112b-207a-480f-b146-6e0f91afe529",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "d9de6a42-6a15-48ae-8120-badbb256ab62",
+          "frames": [
+            {
+              "id": "cd320e95-8504-41ba-84e9-cea8f661054b",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "fc848660-6a8e-4a50-8d0f-2b97de8aa12e",
+          "frames": [
+            {
+              "id": "9852323c-934e-43db-a9ff-f7eb971e0b3e",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "a730dded-ae95-4478-9384-a34c2256c6ca",
+          "frames": [
+            {
+              "id": "64b7e99a-ebf2-47bc-bf4a-29b66c81fd71",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "a37c31ac-1e9d-4260-b460-ffbcc90d7fd8",
+          "frames": [
+            {
+              "id": "9ade27bf-0244-47a8-9b50-60c87e8b955a",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "63dc53d4-5e3a-4024-bf6f-07290c785aa0",
+          "frames": [
+            {
+              "id": "3daa2bd3-e87c-4f1f-b381-3bd0a03282de",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "093eff3e-0ff1-457d-b39c-585c2fa5c63e",
+          "frames": [
+            {
+              "id": "302959a4-7806-49e1-bdeb-a47faef89ffe",
+              "tiles": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 4,
+  "canvasOriginX": 0,
+  "canvasOriginY": 0,
+  "canvasWidth": 16,
+  "canvasHeight": 16,
+  "boundsX": 0,
+  "boundsY": -8,
+  "boundsWidth": 16,
+  "boundsHeight": 16,
+  "animSpeed": 15,
+  "filename": "player_bball.png",
+  "width": 32,
+  "height": 16,
+  "checksum": "8e1973a133a5baa27899b6702ec93d8f0a8d24a4"
+}

@@ -1,0 +1,102 @@
+{
+  "_resourceType": "sprite",
+  "id": "7a3768f1-29ba-4d33-93a7-dd3e4e6b3c4c",
+  "name": "power_meter_bar",
+  "symbol": "sprite_power_meter_bar",
+  "states": [
+    {
+      "id": "9ba2b71a-8776-4c6f-98bf-e4692b6b9a7a",
+      "name": "",
+      "animationType": "multi_movement",
+      "flipLeft": true,
+      "animations": [
+        {
+          "id": "2d799b93-cf2b-49f6-9fa1-759fb6c0546a",
+          "frames": [
+            {
+              "id": "2692da84-6c1d-425d-87c3-bcb4d43f77a3",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "a13dd3a0-0391-4ea7-9dd7-49ec8369eaca",
+          "frames": [
+            {
+              "id": "c66e818a-8bf6-43a1-b838-fb7ed40278f6",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "2c560f53-eb8f-44d3-ae8b-650510442431",
+          "frames": [
+            {
+              "id": "de1a5440-8780-4495-aba0-03e7a6821481",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "fb00817d-1dda-4009-9004-13cf533d9e9d",
+          "frames": [
+            {
+              "id": "695ac22b-70ee-485d-afaf-b8a8e48a8e9c",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "f863b0f4-ce09-4a8a-bbfa-1272f26e6b25",
+          "frames": [
+            {
+              "id": "e4b57dff-7058-4096-ad14-5ac83b00c8cd",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "9757cc58-d50a-4baa-aa25-5cdce3a0f817",
+          "frames": [
+            {
+              "id": "703dfe5b-ac3b-4138-b47a-6a9258e50c2a",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "b4e20b1a-54a7-4b7e-b7fc-9f64bb519b1a",
+          "frames": [
+            {
+              "id": "4d56b6dd-a3df-4180-9ace-124b8e9be5cb",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "a7c8cc47-1ffb-4ecb-b75a-9e2587035af1",
+          "frames": [
+            {
+              "id": "8a93a3e5-fa89-4c7c-b13c-1aca9472debb",
+              "tiles": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 0,
+  "canvasOriginX": 0,
+  "canvasOriginY": 0,
+  "canvasWidth": 32,
+  "canvasHeight": 32,
+  "boundsX": 0,
+  "boundsY": -8,
+  "boundsWidth": 16,
+  "boundsHeight": 16,
+  "animSpeed": 15,
+  "filename": "power_meter_bar.png",
+  "width": 40,
+  "height": 8,
+  "checksum": "32d57a7431afc7bac747416394d60746aecfb1ab"
+}

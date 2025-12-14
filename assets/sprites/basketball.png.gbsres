@@ -1,0 +1,160 @@
+{
+  "_resourceType": "sprite",
+  "id": "b6e030a9-c423-4a95-9d4d-1d1a57c85cf9",
+  "name": "basketball",
+  "symbol": "sprite_basketball",
+  "states": [
+    {
+      "id": "c7f8d9e1-1a2b-3c4d-5e6f-7a8b9c0d1e2f",
+      "name": "",
+      "animationType": "fixed",
+      "flipLeft": false,
+      "animations": [
+        {
+          "id": "361cbd9b-2d17-40aa-8c59-d2dd03e0388f",
+          "frames": [
+            {
+              "id": "ffad7018-fc3d-4519-bd71-2f1ba121bfd5",
+              "tiles": [
+                {
+                  "id": "e7df4008-7958-4e22-962d-1739dc8eec66",
+                  "x": 0,
+                  "y": 0,
+                  "sliceX": 0,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 0,
+                  "objPalette": "OBP0",
+                  "priority": false
+                },
+                {
+                  "id": "22c21284-5a38-4750-a602-28eb3fa03613",
+                  "x": 8,
+                  "y": 0,
+                  "sliceX": 8,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 0,
+                  "objPalette": "OBP0",
+                  "priority": false
+                }
+              ]
+            },
+            {
+              "id": "0c7cf154-8791-4d6e-b35b-5dd971d06846",
+              "tiles": [
+                {
+                  "id": "a6cb46db-3905-4c4c-bcb9-45eb51bce1fb",
+                  "x": 0,
+                  "y": 0,
+                  "sliceX": 16,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 0,
+                  "objPalette": "OBP0",
+                  "priority": false
+                },
+                {
+                  "id": "db121779-c135-46e5-a544-69c047248107",
+                  "x": 8,
+                  "y": 0,
+                  "sliceX": 24,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 0,
+                  "objPalette": "OBP0",
+                  "priority": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b43fb16a-34f0-435a-9181-88a246e6e674",
+          "frames": [
+            {
+              "id": "900a330e-5200-4c29-990b-54d39f7581ab",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "70fa4a21-3b71-4b76-b184-784d724deda2",
+          "frames": [
+            {
+              "id": "1d595555-490c-4978-82eb-c0ceb3fd3fd7",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "7c5d4f01-7ae6-46ed-811e-3d79ce533154",
+          "frames": [
+            {
+              "id": "18af7e36-dba4-49f4-a2da-104649f37e28",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "f4331f17-369d-404a-9fa5-1d614fc5cc51",
+          "frames": [
+            {
+              "id": "f7e1e581-ba17-4791-8a8d-24839dd53443",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "61e2d276-c990-4d8c-ab90-b252bebc1c66",
+          "frames": [
+            {
+              "id": "1a43747a-f9f4-4b1c-96f2-076aabef79ba",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "f102dcd6-dcf5-4ba9-8d11-38dbd0da50ba",
+          "frames": [
+            {
+              "id": "7d194d5c-316c-4e55-951e-1aa802d095b5",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "28d77b57-3892-455d-bf83-ece43bfa1e12",
+          "frames": [
+            {
+              "id": "8bdc38b7-991c-4dbb-af51-1255442505e4",
+              "tiles": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 2,
+  "canvasOriginX": 0,
+  "canvasOriginY": 0,
+  "canvasWidth": 16,
+  "canvasHeight": 16,
+  "boundsX": 0,
+  "boundsY": 0,
+  "boundsWidth": 8,
+  "boundsHeight": 8,
+  "animSpeed": 15,
+  "filename": "basketball.png",
+  "width": 32,
+  "height": 16,
+  "checksum": "1418fc0e653163c9919f7791a17513542c91a1d5"
+}

@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "bg-basketball-court-001",
+  "name": "Basketball Court",
+  "symbol": "bg_basketball_court",
+  "tileColors": "",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "arcade_lane.png",
+  "autoColor": true
+}

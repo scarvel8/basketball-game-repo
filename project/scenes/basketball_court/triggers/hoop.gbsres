@@ -1,0 +1,101 @@
+{
+  "_resourceType": "trigger",
+  "id": "hoop-001",
+  "_index": 0,
+  "symbol": "trigger_hoop",
+  "prefabId": "",
+  "name": "Hoop",
+  "x": 9,
+  "y": 6,
+  "width": 2,
+  "height": 2,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "hoop-check-state",
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "4"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "id": "hoop-set-state",
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "4",
+              "value": {
+                "type": "number",
+                "value": 3
+              }
+            }
+          },
+          {
+            "id": "hoop-stop-vx",
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "5",
+              "value": {
+                "type": "number",
+                "value": 0
+              }
+            }
+          },
+          {
+            "id": "hoop-stop-vy",
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "6",
+              "value": {
+                "type": "number",
+                "value": 0
+              }
+            }
+          },
+          {
+            "id": "hoop-add-score",
+            "command": "EVENT_VARIABLE_MATH",
+            "args": {
+              "vectorX": "1",
+              "operation": "add",
+              "other": "val",
+              "value": 2
+            }
+          },
+          {
+            "id": "hoop-sound",
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "tone",
+              "pitch": 9,
+              "frequency": 400,
+              "duration": 0.2,
+              "wait": false,
+              "priority": "high",
+              "effect": 0
+            }
+          },
+          {
+            "id": "hoop-text",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "SCORE!\\n+2 points\\nTotal: $01$"
+            }
+          }
+        ],
+        "false": []
+      }
+    }
+  ],
+  "leaveScript": []
+}

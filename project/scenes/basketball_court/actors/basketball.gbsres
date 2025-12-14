@@ -1,0 +1,325 @@
+{
+  "_resourceType": "actor",
+  "id": "ball-001",
+  "_index": 1,
+  "symbol": "actor_ball",
+  "prefabId": "",
+  "name": "Basketball",
+  "coordinateType": "pixels",
+  "x": 0,
+  "y": 0,
+  "frame": 0,
+  "animate": true,
+  "spriteSheetId": "b6e030a9-c423-4a95-9d4d-1d1a57c85cf9",
+  "paletteId": "default-sprite",
+  "direction": "up",
+  "moveSpeed": 1,
+  "animSpeed": 7,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "1",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [
+    {
+      "id": "ball-start-001",
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "$self$"
+      }
+    }
+  ],
+  "updateScript": [
+    {
+      "id": "ball-upd-001",
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "4"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "id": "ball-upd-002",
+            "command": "EVENT_ACTOR_MOVE_RELATIVE",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "variable",
+                "value": "5"
+              },
+              "y": {
+                "type": "variable",
+                "value": "6"
+              },
+              "units": "pixels",
+              "moveType": "diagonal"
+            }
+          },
+          {
+            "id": "ball-upd-003",
+            "command": "EVENT_VARIABLE_MATH",
+            "args": {
+              "vectorX": "6",
+              "operation": "add",
+              "other": "val",
+              "value": 1
+            }
+          },
+          {
+            "id": "ball-upd-004",
+            "command": "EVENT_ACTOR_GET_POSITION",
+            "args": {
+              "actorId": "$self$",
+              "vectorX": "T0",
+              "vectorY": "T1",
+              "units": "pixels"
+            }
+          },
+          {
+            "id": "ball-upd-hoop-check",
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "and",
+                "valueA": {
+                  "type": "and",
+                  "valueA": {
+                    "type": "gte",
+                    "valueA": {
+                      "type": "variable",
+                      "value": "T0"
+                    },
+                    "valueB": {
+                      "type": "number",
+                      "value": 64
+                    }
+                  },
+                  "valueB": {
+                    "type": "lte",
+                    "valueA": {
+                      "type": "variable",
+                      "value": "T0"
+                    },
+                    "valueB": {
+                      "type": "number",
+                      "value": 88
+                    }
+                  }
+                },
+                "valueB": {
+                  "type": "and",
+                  "valueA": {
+                    "type": "gte",
+                    "valueA": {
+                      "type": "variable",
+                      "value": "T1"
+                    },
+                    "valueB": {
+                      "type": "number",
+                      "value": 40
+                    }
+                  },
+                  "valueB": {
+                    "type": "lte",
+                    "valueA": {
+                      "type": "variable",
+                      "value": "T1"
+                    },
+                    "valueB": {
+                      "type": "number",
+                      "value": 64
+                    }
+                  }
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "id": "ball-upd-hoop-check-power",
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "and",
+                      "valueA": {
+                        "type": "gte",
+                        "valueA": {
+                          "type": "variable",
+                          "value": "7"
+                        },
+                        "valueB": {
+                          "type": "number",
+                          "value": 80
+                        }
+                      },
+                      "valueB": {
+                        "type": "lte",
+                        "valueA": {
+                          "type": "variable",
+                          "value": "7"
+                        },
+                        "valueB": {
+                          "type": "number",
+                          "value": 120
+                        }
+                      }
+                    }
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "id": "ball-upd-hoop-score",
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "4",
+                          "value": {
+                            "type": "number",
+                            "value": 3
+                          }
+                        }
+                      }
+                    ],
+                    "false": [
+                      {
+                        "id": "ball-upd-hoop-miss",
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "4",
+                          "value": {
+                            "type": "number",
+                            "value": 2
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "ball-upd-hoop-stop-vx",
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "5",
+                    "value": {
+                      "type": "number",
+                      "value": 0
+                    }
+                  }
+                },
+                {
+                  "id": "ball-upd-hoop-stop-vy",
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "6",
+                    "value": {
+                      "type": "number",
+                      "value": 0
+                    }
+                  }
+                }
+              ],
+              "false": []
+            }
+          },
+          {
+            "id": "ball-upd-005",
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "or",
+                "valueA": {
+                  "type": "lt",
+                  "valueA": {
+                    "type": "variable",
+                    "value": "T0"
+                  },
+                  "valueB": {
+                    "type": "number",
+                    "value": 0
+                  }
+                },
+                "valueB": {
+                  "type": "or",
+                  "valueA": {
+                    "type": "gt",
+                    "valueA": {
+                      "type": "variable",
+                      "value": "T0"
+                    },
+                    "valueB": {
+                      "type": "number",
+                      "value": 160
+                    }
+                  },
+                  "valueB": {
+                    "type": "gt",
+                    "valueA": {
+                      "type": "variable",
+                      "value": "T1"
+                    },
+                    "valueB": {
+                      "type": "number",
+                      "value": 136
+                    }
+                  }
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "id": "ball-upd-006",
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "4",
+                    "value": {
+                      "type": "number",
+                      "value": 2
+                    }
+                  }
+                },
+                {
+                  "id": "ball-upd-008",
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "5",
+                    "value": {
+                      "type": "number",
+                      "value": 0
+                    }
+                  }
+                },
+                {
+                  "id": "ball-upd-009",
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "6",
+                    "value": {
+                      "type": "number",
+                      "value": 0
+                    }
+                  }
+                }
+              ],
+              "false": []
+            }
+          }
+        ],
+        "false": []
+      }
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

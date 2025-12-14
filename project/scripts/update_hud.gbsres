@@ -1,0 +1,25 @@
+{
+  "_resourceType": "script",
+  "id": "b2c3d4e5-6f7a-8b9c-0d1e-2f3a4b5c6d7e",
+  "name": "Update HUD",
+  "description": "Update HUD with current score, shots, and power values",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_update_hud",
+  "script": [
+    {
+      "command": "EVENT_GBVM_SCRIPT",
+      "args": {
+        "script": "VM_LOAD_TEXT 3\n.dw VAR_SCORE_CURRENT\n.dw VAR_HIGH_SCORE\n.dw VAR_POWER_VALUE\n.asciz \"Score:%D3 Shots:%D3\\nPower:%D3\""
+      },
+      "id": "update-hud-001"
+    },
+    {
+      "command": "EVENT_GBVM_SCRIPT",
+      "args": {
+        "script": "VM_DISPLAY_TEXT"
+      },
+      "id": "update-hud-002"
+    }
+  ]
+}

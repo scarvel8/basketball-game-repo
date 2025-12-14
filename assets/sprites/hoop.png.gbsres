@@ -1,0 +1,129 @@
+{
+  "_resourceType": "sprite",
+  "id": "b2e2581f-a7aa-446a-8abe-7c1e530a5921",
+  "name": "hoop",
+  "symbol": "sprite_hoop",
+  "states": [
+    {
+      "id": "982a9d37-7730-43c4-989f-8443c9f429a9",
+      "name": "",
+      "animationType": "fixed",
+      "flipLeft": false,
+      "animations": [
+        {
+          "id": "ef4202e1-c843-47b8-b923-e6068ae61401",
+          "frames": [
+            {
+              "id": "7eee06d8-0fcb-4439-805a-4f0359c00717",
+              "tiles": [
+                {
+                  "id": "ff1d7619-4025-4103-a822-3a575c7f49b5",
+                  "x": 0,
+                  "y": 0,
+                  "sliceX": 0,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 0,
+                  "objPalette": "OBP0",
+                  "priority": false
+                },
+                {
+                  "id": "8ce155c6-aadf-4aaf-b48e-92203fea18a3",
+                  "x": 8,
+                  "y": 0,
+                  "sliceX": 8,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 0,
+                  "objPalette": "OBP0",
+                  "priority": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "6f8791cf-94c1-48ac-86ac-53146067f8d3",
+          "frames": [
+            {
+              "id": "0c46dcc9-a2da-4a63-87f8-9d45a409cd5a",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "263905b2-34c5-4e8b-981a-bac28ed2ab6b",
+          "frames": [
+            {
+              "id": "03802040-d87f-4b9a-9d3b-aa6ae68778d7",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "07574866-727e-4af8-ba86-27ce89cdd11e",
+          "frames": [
+            {
+              "id": "e4a35260-be99-488c-8ffb-566747a9c17b",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "67f65fa0-1ea4-461f-a7d1-d360d72d42f0",
+          "frames": [
+            {
+              "id": "3ccbbcc4-f37d-46c5-9304-31df3fda482f",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "a2deb19e-9038-46db-b8e7-03b5054d22f8",
+          "frames": [
+            {
+              "id": "5584dd76-b3f3-472c-a3d1-76be8c6ee20b",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "ecdbbc0a-d04f-4375-8873-65b7e9f5cdfc",
+          "frames": [
+            {
+              "id": "adbc2e92-5646-47d9-bd4a-5b276b15b5f0",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "bc635508-3ab5-43df-96c5-22d1c1b1c976",
+          "frames": [
+            {
+              "id": "ca9b3b14-4ceb-4007-b81d-d8f856690dd6",
+              "tiles": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 2,
+  "canvasOriginX": 0,
+  "canvasOriginY": 0,
+  "canvasWidth": 16,
+  "canvasHeight": 16,
+  "boundsX": 0,
+  "boundsY": -8,
+  "boundsWidth": 16,
+  "boundsHeight": 16,
+  "animSpeed": 15,
+  "filename": "hoop.png",
+  "width": 16,
+  "height": 16,
+  "checksum": "1a6ffc2a0062af344f943a9e8b09e8db439dd486"
+}

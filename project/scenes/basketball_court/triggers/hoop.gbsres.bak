@@ -1,0 +1,122 @@
+{
+  "_resourceType": "trigger",
+  "id": "hoop-001",
+  "_index": 0,
+  "symbol": "trigger_hoop",
+  "prefabId": "",
+  "name": "Hoop",
+  "x": 9,
+  "y": 2,
+  "width": 2,
+  "height": 2,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "hoop-check-state",
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "4"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "id": "hoop-set-state",
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "4",
+              "value": {
+                "type": "number",
+                "value": 0
+              }
+            }
+          },
+          {
+            "id": "hoop-calc-points",
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "8",
+              "value": {
+                "type": "number",
+                "value": 10
+              }
+            }
+          },
+          {
+            "id": "hoop-bonus",
+            "command": "EVENT_VARIABLE_MATH",
+            "args": {
+              "vectorX": "8",
+              "operation": "add",
+              "other": "var",
+              "vectorY": "7",
+              "value": 0,
+              "minValue": 0,
+              "maxValue": 255,
+              "clamp": false
+            }
+          },
+          {
+            "id": "hoop-add-score",
+            "command": "EVENT_VARIABLE_MATH",
+            "args": {
+              "vectorX": "1",
+              "operation": "add",
+              "other": "var",
+              "vectorY": "8",
+              "value": 0,
+              "minValue": 0,
+              "maxValue": 9999,
+              "clamp": true
+            }
+          },
+          {
+            "id": "hoop-sound",
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "tone",
+              "pitch": 9,
+              "frequency": 400,
+              "duration": 0.2,
+              "wait": false,
+              "priority": "high",
+              "effect": 0
+            }
+          },
+          {
+            "id": "hoop-text",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "SCORE!\\n+$08$ points\\nTotal: $01$"
+            }
+          },
+          {
+            "id": "hoop-hide-ball",
+            "command": "EVENT_ACTOR_HIDE",
+            "args": {
+              "actorId": "ball-001"
+            }
+          },
+          {
+            "id": "hoop-wait",
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 0.5
+            }
+          }
+        ],
+        "false": []
+      }
+    }
+  ],
+  "leaveScript": []
+}

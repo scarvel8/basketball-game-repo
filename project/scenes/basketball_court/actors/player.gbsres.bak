@@ -1,0 +1,296 @@
+{
+  "_resourceType": "actor",
+  "id": "player-001",
+  "_index": 0,
+  "symbol": "actor_player",
+  "prefabId": "",
+  "name": "Player",
+  "coordinateType": "tiles",
+  "x": 10,
+  "y": 14,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "a6f0b2b3-e2f3-40c1-8188-f0510d02ec7b",
+  "paletteId": "default-sprite",
+  "direction": "up",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "player",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [],
+  "updateScript": [
+    {
+      "id": "player-upd-001",
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "4"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "id": "player-upd-002",
+            "command": "EVENT_IF_INPUT",
+            "args": {
+              "input": ["left"]
+            },
+            "children": {
+              "true": [
+                {
+                  "id": "player-upd-003",
+                  "command": "EVENT_ACTOR_GET_POSITION",
+                  "args": {
+                    "actorId": "$self$",
+                    "vectorX": "T0",
+                    "vectorY": "T1",
+                    "units": "tiles"
+                  }
+                },
+                {
+                  "id": "player-upd-004",
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "gt",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "T0"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 3
+                      }
+                    }
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "id": "player-upd-005",
+                        "command": "EVENT_ACTOR_MOVE_RELATIVE",
+                        "args": {
+                          "actorId": "$self$",
+                          "x": {
+                            "type": "number",
+                            "value": -1
+                          },
+                          "y": {
+                            "type": "number",
+                            "value": 0
+                          },
+                          "units": "tiles",
+                          "moveType": "horizontal"
+                        }
+                      }
+                    ],
+                    "false": []
+                  }
+                }
+              ],
+              "false": []
+            }
+          },
+          {
+            "id": "player-upd-006",
+            "command": "EVENT_IF_INPUT",
+            "args": {
+              "input": ["right"]
+            },
+            "children": {
+              "true": [
+                {
+                  "id": "player-upd-007",
+                  "command": "EVENT_ACTOR_GET_POSITION",
+                  "args": {
+                    "actorId": "$self$",
+                    "vectorX": "T0",
+                    "vectorY": "T1",
+                    "units": "tiles"
+                  }
+                },
+                {
+                  "id": "player-upd-008",
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "lt",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "T0"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 16
+                      }
+                    }
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "id": "player-upd-009",
+                        "command": "EVENT_ACTOR_MOVE_RELATIVE",
+                        "args": {
+                          "actorId": "$self$",
+                          "x": {
+                            "type": "number",
+                            "value": 1
+                          },
+                          "y": {
+                            "type": "number",
+                            "value": 0
+                          },
+                          "units": "tiles",
+                          "moveType": "horizontal"
+                        }
+                      }
+                    ],
+                    "false": []
+                  }
+                }
+              ],
+              "false": []
+            }
+          },
+          {
+            "id": "player-upd-010",
+            "command": "EVENT_IF_INPUT",
+            "args": {
+              "input": ["up"]
+            },
+            "children": {
+              "true": [
+                {
+                  "id": "player-upd-011",
+                  "command": "EVENT_ACTOR_GET_POSITION",
+                  "args": {
+                    "actorId": "$self$",
+                    "vectorX": "T0",
+                    "vectorY": "T1",
+                    "units": "tiles"
+                  }
+                },
+                {
+                  "id": "player-upd-012",
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "gt",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "T1"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 13
+                      }
+                    }
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "id": "player-upd-013",
+                        "command": "EVENT_ACTOR_MOVE_RELATIVE",
+                        "args": {
+                          "actorId": "$self$",
+                          "x": {
+                            "type": "number",
+                            "value": 0
+                          },
+                          "y": {
+                            "type": "number",
+                            "value": -1
+                          },
+                          "units": "tiles",
+                          "moveType": "vertical"
+                        }
+                      }
+                    ],
+                    "false": []
+                  }
+                }
+              ],
+              "false": []
+            }
+          },
+          {
+            "id": "player-upd-014",
+            "command": "EVENT_IF_INPUT",
+            "args": {
+              "input": ["down"]
+            },
+            "children": {
+              "true": [
+                {
+                  "id": "player-upd-015",
+                  "command": "EVENT_ACTOR_GET_POSITION",
+                  "args": {
+                    "actorId": "$self$",
+                    "vectorX": "T0",
+                    "vectorY": "T1",
+                    "units": "tiles"
+                  }
+                },
+                {
+                  "id": "player-upd-016",
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "lt",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "T1"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 17
+                      }
+                    }
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "id": "player-upd-017",
+                        "command": "EVENT_ACTOR_MOVE_RELATIVE",
+                        "args": {
+                          "actorId": "$self$",
+                          "x": {
+                            "type": "number",
+                            "value": 0
+                          },
+                          "y": {
+                            "type": "number",
+                            "value": 1
+                          },
+                          "units": "tiles",
+                          "moveType": "vertical"
+                        }
+                      }
+                    ],
+                    "false": []
+                  }
+                }
+              ],
+              "false": []
+            }
+          }
+        ],
+        "false": []
+      }
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

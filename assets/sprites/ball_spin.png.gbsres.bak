@@ -1,0 +1,130 @@
+{
+  "_resourceType": "sprite",
+  "id": "c7c6c9d1-b4c9-4c14-9130-1c5d9f72f0c4",
+  "name": "ball_spin",
+  "symbol": "sprite_ball_spin",
+  "states": [
+    {
+      "id": "state-ball",
+      "name": "",
+      "animationType": "multi_movement",
+      "flipLeft": true,
+      "animations": [
+        {
+          "id": "anim-ball-1",
+          "frames": [
+            {
+              "id": "frame-ball-1",
+              "tiles": [
+                {
+                  "id": "tile-ball-1a",
+                  "x": 0,
+                  "y": 0,
+                  "sliceX": 0,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 0,
+                  "objPalette": "OBP0",
+                  "priority": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "anim-ball-2",
+          "frames": [
+            {
+              "id": "frame-ball-2",
+              "tiles": [
+                {
+                  "id": "tile-ball-2a",
+                  "x": 0,
+                  "y": 0,
+                  "sliceX": 8,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 0,
+                  "objPalette": "OBP0",
+                  "priority": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bf636a76-df1f-453c-bc6f-1fc57acb6759",
+          "frames": [
+            {
+              "id": "b1908c3d-6087-434e-9ede-d75442287252",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "e2583ce2-1126-44fe-ab37-880d9b0fd9c1",
+          "frames": [
+            {
+              "id": "e2d060df-bcf9-4604-9de9-1a50adecc762",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "e5038490-3f62-46b1-8e24-3ae480b315bd",
+          "frames": [
+            {
+              "id": "e2b1a7f5-d1e7-4664-915c-fb2abf93ef7f",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "34f312a6-4977-4890-8314-2a40d7e4848e",
+          "frames": [
+            {
+              "id": "5d40ea66-9f6d-4fac-b366-51d324c611aa",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "5b4747e1-adb4-4036-b455-cc22ee7b64c0",
+          "frames": [
+            {
+              "id": "e5de8db8-14d3-4350-93b1-91829ba7bf25",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "ed08ce74-117c-4b82-9d21-b9c46d13ed8d",
+          "frames": [
+            {
+              "id": "4c57b10a-a791-4987-af3d-36b0d46d692e",
+              "tiles": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 2,
+  "canvasOriginX": 0,
+  "canvasOriginY": 0,
+  "canvasWidth": 8,
+  "canvasHeight": 8,
+  "boundsX": 0,
+  "boundsY": 0,
+  "boundsWidth": 8,
+  "boundsHeight": 8,
+  "animSpeed": 8,
+  "filename": "ball_spin.png",
+  "width": 16,
+  "height": 8,
+  "checksum": ""
+}

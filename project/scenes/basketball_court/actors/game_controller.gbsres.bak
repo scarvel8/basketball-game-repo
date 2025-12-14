@@ -1,0 +1,396 @@
+{
+  "_resourceType": "actor",
+  "id": "controller-001",
+  "_index": 2,
+  "symbol": "actor_game_controller",
+  "name": "Game Controller",
+  "prefabId": "",
+  "prefabScriptOverrides": {},
+  "coordinateType": "tiles",
+  "x": 30,
+  "y": 30,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "a6f0b2b3-e2f3-40c1-8188-f0510d02ec7b",
+  "paletteId": "default-sprite",
+  "direction": "up",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": true,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "script": [],
+  "startScript": [
+    {
+      "id": "ctrl-start-001",
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "$self$"
+      }
+    }
+  ],
+  "updateScript": [
+    {
+      "id": "upd-left",
+      "command": "EVENT_IF_INPUT",
+      "args": {
+        "input": [
+          "left"
+        ]
+      },
+      "children": {
+        "true": [
+          {
+            "id": "upd-left-move",
+            "command": "EVENT_ACTOR_MOVE_RELATIVE",
+            "args": {
+              "actorId": "player-001",
+              "x": {
+                "type": "number",
+                "value": -1
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "units": "pixels",
+              "moveType": "horizontal"
+            }
+          }
+        ],
+        "false": []
+      }
+    },
+    {
+      "id": "upd-right",
+      "command": "EVENT_IF_INPUT",
+      "args": {
+        "input": [
+          "right"
+        ]
+      },
+      "children": {
+        "true": [
+          {
+            "id": "upd-right-move",
+            "command": "EVENT_ACTOR_MOVE_RELATIVE",
+            "args": {
+              "actorId": "player-001",
+              "x": {
+                "type": "number",
+                "value": 1
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "units": "pixels",
+              "moveType": "horizontal"
+            }
+          }
+        ],
+        "false": []
+      }
+    },
+    {
+      "id": "upd-a-button",
+      "command": "EVENT_IF_INPUT",
+      "args": {
+        "input": [
+          "a"
+        ]
+      },
+      "children": {
+        "true": [
+          {
+            "id": "upd-a-charging",
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "9",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            }
+          },
+          {
+            "id": "upd-a-increment",
+            "command": "EVENT_VARIABLE_MATH",
+            "args": {
+              "vectorX": "7",
+              "operation": "add",
+              "other": "val",
+              "value": 4
+            }
+          }
+        ],
+        "false": [
+          {
+            "id": "upd-a-release-check",
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "9"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "id": "upd-release-flag",
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "9",
+                    "value": {
+                      "type": "number",
+                      "value": 0
+                    }
+                  }
+                },
+                {
+                  "id": "upd-release-getpos",
+                  "command": "EVENT_ACTOR_GET_POSITION",
+                  "args": {
+                    "actorId": "player-001",
+                    "vectorX": "T0",
+                    "vectorY": "T1",
+                    "units": "tiles"
+                  }
+                },
+                {
+                  "id": "upd-release-setballpos",
+                  "command": "EVENT_ACTOR_SET_POSITION",
+                  "args": {
+                    "actorId": "ball-001",
+                    "x": {
+                      "type": "variable",
+                      "value": "T0"
+                    },
+                    "y": {
+                      "type": "variable",
+                      "value": "T1"
+                    },
+                    "units": "tiles"
+                  }
+                },
+                {
+                  "id": "upd-release-calcvy",
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "6",
+                    "value": {
+                      "type": "variable",
+                      "value": "7"
+                    }
+                  }
+                },
+                {
+                  "id": "upd-release-vy-scale",
+                  "command": "EVENT_VARIABLE_MATH",
+                  "args": {
+                    "vectorX": "6",
+                    "operation": "div",
+                    "other": "val",
+                    "value": 30
+                  }
+                },
+                {
+                  "id": "upd-release-vy-negate",
+                  "command": "EVENT_VARIABLE_MATH",
+                  "args": {
+                    "vectorX": "6",
+                    "operation": "mul",
+                    "other": "val",
+                    "value": -1
+                  }
+                },
+                {
+                  "id": "upd-release-calc-dx",
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "5",
+                    "value": {
+                      "type": "number",
+                      "value": 9
+                    }
+                  }
+                },
+                {
+                  "id": "upd-release-dx-sub",
+                  "command": "EVENT_VARIABLE_MATH",
+                  "args": {
+                    "vectorX": "5",
+                    "operation": "sub",
+                    "other": "var",
+                    "value": "T0"
+                  }
+                },
+                {
+                  "id": "upd-release-dx-to-pixels",
+                  "command": "EVENT_VARIABLE_MATH",
+                  "args": {
+                    "vectorX": "5",
+                    "operation": "mul",
+                    "other": "val",
+                    "value": 8
+                  }
+                },
+                {
+                  "id": "upd-release-vx-scale",
+                  "command": "EVENT_VARIABLE_MATH",
+                  "args": {
+                    "vectorX": "5",
+                    "operation": "div",
+                    "other": "val",
+                    "value": 10
+                  }
+                },
+                {
+                  "id": "upd-release-state",
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "4",
+                    "value": {
+                      "type": "number",
+                      "value": 1
+                    }
+                  }
+                },
+                {
+                  "id": "upd-release-show",
+                  "command": "EVENT_ACTOR_SHOW",
+                  "args": {
+                    "actorId": "ball-001"
+                  }
+                },
+                {
+                  "id": "upd-release-sound",
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "beep",
+                    "pitch": 8,
+                    "frequency": 200,
+                    "duration": 0.1,
+                    "wait": false,
+                    "priority": "medium",
+                    "effect": 0
+                  }
+                },
+                {
+                  "id": "upd-release-reset",
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "7",
+                    "value": {
+                      "type": "number",
+                      "value": 0
+                    }
+                  }
+                }
+              ],
+              "false": []
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "upd-check-miss",
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "4"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 2
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "id": "upd-miss-text",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "MISS!\\nTry again!\\nScore: $01$"
+            }
+          },
+          {
+            "id": "upd-miss-reset-state",
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "4",
+              "value": {
+                "type": "number",
+                "value": 0
+              }
+            }
+          },
+          {
+            "id": "upd-miss-hide-ball",
+            "command": "EVENT_ACTOR_HIDE",
+            "args": {
+              "actorId": "ball-001"
+            }
+          }
+        ],
+        "false": []
+      }
+    },
+    {
+      "id": "upd-check-score",
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "4"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 3
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "id": "upd-score-reset-state",
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "4",
+              "value": {
+                "type": "number",
+                "value": 0
+              }
+            }
+          },
+          {
+            "id": "upd-score-hide-ball",
+            "command": "EVENT_ACTOR_HIDE",
+            "args": {
+              "actorId": "ball-001"
+            }
+          }
+        ],
+        "false": []
+      }
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

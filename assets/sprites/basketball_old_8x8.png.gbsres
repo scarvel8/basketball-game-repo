@@ -1,0 +1,129 @@
+{
+  "_resourceType": "sprite",
+  "id": "424230ac-1b94-4d2a-9d50-fcc3f3f55ccd",
+  "name": "basketball_old_8x8",
+  "symbol": "sprite_basketball_old_8x8",
+  "states": [
+    {
+      "id": "52eb770f-149f-4e5b-aa3f-eadc69c8b696",
+      "name": "",
+      "animationType": "multi_movement",
+      "flipLeft": true,
+      "animations": [
+        {
+          "id": "6f74f42f-b87e-48ad-a3aa-8026f13b36bc",
+          "frames": [
+            {
+              "id": "e2cd6576-3562-43b9-a370-9b784241b93a",
+              "tiles": [
+                {
+                  "id": "1b44d39d-707a-493d-a5cc-f5d34d097107",
+                  "x": 0,
+                  "y": 0,
+                  "sliceX": 0,
+                  "sliceY": -8,
+                  "palette": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "objPalette": "OBP0",
+                  "paletteIndex": 0,
+                  "priority": false
+                },
+                {
+                  "id": "f76b19c3-df41-49ae-b77b-99a4f59e0a72",
+                  "x": 8,
+                  "y": 0,
+                  "sliceX": 8,
+                  "sliceY": -8,
+                  "palette": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "objPalette": "OBP0",
+                  "paletteIndex": 0,
+                  "priority": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "7857b158-523d-4947-bd45-ae0a2f80556d",
+          "frames": [
+            {
+              "id": "12b41c2c-8cb9-4b54-833f-ab839df691a1",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "5203d2a8-327f-4751-9671-93b67beb9947",
+          "frames": [
+            {
+              "id": "93462068-58c0-447d-b8e1-b091a5abb9c4",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "f6cb910d-4f23-4a04-8a2d-d11021be6024",
+          "frames": [
+            {
+              "id": "429bbab7-d4cd-48f7-b36b-592d4799a09c",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "35c134e0-58c1-4aaa-8359-a62aef87d632",
+          "frames": [
+            {
+              "id": "a22eee9a-7ca6-47de-a33a-93860c14fdb8",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "2e6345b7-959e-44da-b440-c128f78c3325",
+          "frames": [
+            {
+              "id": "b4a805cf-7bc8-49b2-b832-b262d963c185",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "c626a64e-c6b3-4b79-8dea-50a6969baed1",
+          "frames": [
+            {
+              "id": "15753ea4-e86f-4408-8243-dcfa54d620c7",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "5c2926ac-45d7-45be-a671-64912ccd994e",
+          "frames": [
+            {
+              "id": "ce5bfc74-33d5-49ef-9bcf-72cdb135a05b",
+              "tiles": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 2,
+  "canvasOriginX": 0,
+  "canvasOriginY": 0,
+  "canvasWidth": 32,
+  "canvasHeight": 32,
+  "boundsX": 0,
+  "boundsY": -8,
+  "boundsWidth": 16,
+  "boundsHeight": 16,
+  "animSpeed": 15,
+  "filename": "basketball_old_8x8.png",
+  "width": 16,
+  "height": 8,
+  "checksum": "d4a51f5feae97e10f9b051dcec8486dfb2c164ab"
+}

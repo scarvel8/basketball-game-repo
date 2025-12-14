@@ -1,0 +1,28 @@
+{
+  "_resourceType": "script",
+  "id": "a1b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+  "name": "Open HUD",
+  "description": "Initialize the HUD overlay display",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_open_hud",
+  "script": [
+    {
+      "command": "EVENT_TEXT_SET_ANIMATION_SPEED",
+      "args": {
+        "speedIn": 0,
+        "speedOut": 0,
+        "speed": 0,
+        "allowFastForward": true
+      },
+      "id": "open-hud-001"
+    },
+    {
+      "command": "EVENT_GBVM_SCRIPT",
+      "args": {
+        "script": "VM_OVERLAY_SHOW 0, 16, .UI_COLOR_WHITE, 0"
+      },
+      "id": "open-hud-002"
+    }
+  ]
+}

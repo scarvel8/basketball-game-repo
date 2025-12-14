@@ -1,0 +1,130 @@
+{
+  "_resourceType": "sprite",
+  "id": "b6e030a9-c423-4a95-9d4d-1d1a57c85cf9",
+  "name": "basketball",
+  "symbol": "sprite_basketball",
+  "states": [
+    {
+      "id": "c7f8d9e1-1a2b-3c4d-5e6f-7a8b9c0d1e2f",
+      "name": "",
+      "animationType": "multi_movement",
+      "flipLeft": true,
+      "animations": [
+        {
+          "id": "d8e9f0a1-2b3c-4d5e-6f7a-8b9c0d1e2f3a",
+          "frames": [
+            {
+              "id": "e9f0a1b2-3c4d-5e6f-7a8b-9c0d1e2f3a4b",
+              "tiles": [
+                {
+                  "id": "f0a1b2c3-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+                  "x": 0,
+                  "y": 0,
+                  "sliceX": 0,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 0,
+                  "objPalette": "OBP0",
+                  "priority": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "55bb636e-c1c3-455d-b4e5-139d958c019e",
+          "frames": [
+            {
+              "id": "bc497373-e658-497f-acf7-e8bfe8c1126f",
+              "tiles": [
+                {
+                  "id": "a1b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+                  "x": 0,
+                  "y": 0,
+                  "sliceX": 8,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 0,
+                  "objPalette": "OBP0",
+                  "priority": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "362f649e-422d-4ebd-9851-083a2b3183ec",
+          "frames": [
+            {
+              "id": "55ec18b0-bb68-45a9-973d-7c2c59530c79",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "64ad5962-4d98-4b37-b1f0-1e69d4067b00",
+          "frames": [
+            {
+              "id": "97ec3cbd-ae8e-41ac-a161-048d109be40e",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "9cdae10c-1588-4a9a-9968-6f7a2756245a",
+          "frames": [
+            {
+              "id": "f7b1fa3c-7f42-4264-80e7-cd45ab2571c7",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "b67db25c-d558-4313-b274-70a53bb3a6f1",
+          "frames": [
+            {
+              "id": "899cf8ed-164b-48e7-bdfb-829013933324",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "e70506b9-01a7-4a90-9baf-2417b7f30a17",
+          "frames": [
+            {
+              "id": "7b74a035-f131-4b7c-a22b-a200e118b374",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "2b15b11f-7d31-4a43-ad28-f4ddb912313e",
+          "frames": [
+            {
+              "id": "83d7d25c-0618-404b-84f0-8731c5f197db",
+              "tiles": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 1,
+  "canvasOriginX": 0,
+  "canvasOriginY": 0,
+  "canvasWidth": 8,
+  "canvasHeight": 8,
+  "boundsX": 0,
+  "boundsY": 0,
+  "boundsWidth": 8,
+  "boundsHeight": 8,
+  "animSpeed": 15,
+  "filename": "basketball.png",
+  "width": 16,
+  "height": 8,
+  "checksum": "d4a51f5feae97e10f9b051dcec8486dfb2c164ab"
+}

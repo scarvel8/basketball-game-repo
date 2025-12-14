@@ -1,0 +1,101 @@
+{
+  "_resourceType": "variables",
+  "variables": [
+    {
+      "id": "0",
+      "name": "game_state",
+      "symbol": "var_game_state"
+    },
+    {
+      "id": "1",
+      "name": "score_current",
+      "symbol": "var_score_current"
+    },
+    {
+      "id": "2",
+      "name": "high_score",
+      "symbol": "var_high_score"
+    },
+    {
+      "id": "3",
+      "name": "timer",
+      "symbol": "var_timer"
+    },
+    {
+      "id": "4",
+      "name": "ball_state",
+      "symbol": "var_ball_state"
+    },
+    {
+      "id": "5",
+      "name": "ball_vx",
+      "symbol": "var_ball_vx"
+    },
+    {
+      "id": "6",
+      "name": "ball_vy",
+      "symbol": "var_ball_vy"
+    },
+    {
+      "id": "7",
+      "name": "power_value",
+      "symbol": "var_power_value"
+    },
+    {
+      "id": "8",
+      "name": "shot_points",
+      "symbol": "var_shot_points"
+    },
+    {
+      "id": "9",
+      "name": "charging_flag",
+      "symbol": "var_charging_flag"
+    },
+    {
+      "id": "10",
+      "name": "debug_up",
+      "symbol": "var_debug_up"
+    },
+    {
+      "id": "11",
+      "name": "debug_down",
+      "symbol": "var_debug_down"
+    },
+    {
+      "id": "12",
+      "name": "debug_left",
+      "symbol": "var_debug_left"
+    },
+    {
+      "id": "13",
+      "name": "debug_right",
+      "symbol": "var_debug_right"
+    },
+    {
+      "id": "14",
+      "name": "debug_a",
+      "symbol": "var_debug_a"
+    },
+    {
+      "id": "15",
+      "name": "debug_b",
+      "symbol": "var_debug_b"
+    },
+    {
+      "id": "16",
+      "name": "debug_start",
+      "symbol": "var_debug_start"
+    },
+    {
+      "id": "17",
+      "name": "debug_select",
+      "symbol": "var_debug_select"
+    },
+    {
+      "id": "30",
+      "name": "debug_mode",
+      "symbol": "var_debug_mode"
+    }
+  ],
+  "constants": []
+}

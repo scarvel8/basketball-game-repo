@@ -1,0 +1,151 @@
+{
+  "_resourceType": "scene",
+  "id": "bball-scene-001",
+  "_index": 0,
+  "type": "TOPDOWN",
+  "name": "Basketball Court",
+  "symbol": "scene_basketball_court",
+  "x": 0,
+  "y": 0,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "bg-basketball-court-001",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "autoFadeEventCollapse": true,
+  "parallax": [],
+  "playerSpriteSheetId": "",
+  "script": [
+    {
+      "id": "init-001",
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "=== GAME INITIALIZATION ==="
+      }
+    },
+    {
+      "id": "init-002",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "0",
+        "value": {
+          "type": "number",
+          "value": 1
+        }
+      }
+    },
+    {
+      "id": "init-003",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "1",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "init-004",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "2",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "init-005",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "3",
+        "value": {
+          "type": "number",
+          "value": 3600
+        }
+      }
+    },
+    {
+      "id": "init-006",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "7",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "init-006",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "7",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "init-007",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "9",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "init-008",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "30",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "init-009",
+      "command": "EVENT_CAMERA_LOCK",
+      "args": {
+        "speed": 0,
+        "axis": []
+      }
+    },
+    {
+      "id": "init-010",
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "a1b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d"
+      }
+    },
+    {
+      "id": "init-011",
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "b2c3d4e5-6f7a-8b9c-0d1e-2f3a4b5c6d7e"
+      }
+    },
+    {
+      "id": "init-012",
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": "BASKETBALL GAME\\n\\nHold A to charge\\nRelease to shoot!\\n\\nScore: $01$\\nShots: $02$"
+      }
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}
